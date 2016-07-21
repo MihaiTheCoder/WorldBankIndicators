@@ -1,7 +1,4 @@
-﻿// Learn more about F# at http://fsharp.org
-// See the 'F# Tutorial' project for more help.
-
-open FSharp.Data
+﻿open FSharp.Data
 open FSharp.Charting
 
 type WorldBank = WorldBankDataProvider<"World Development Indicators", Asynchronous=false>
@@ -31,6 +28,5 @@ let main argv =
     
     draw(gdpPerCapita, "Birth rate per 1000 people")    
     
-    //
     printfn "%A" argv
     0 // return an integer exit code
