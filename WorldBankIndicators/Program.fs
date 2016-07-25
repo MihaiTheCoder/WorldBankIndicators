@@ -3,7 +3,7 @@ open FSharp.Charting
 
 type WorldBank = WorldBankDataProvider<"World Development Indicators", Asynchronous=false>
 let wb = WorldBank.GetDataContext()
-let countries = [| wb.Countries.Bulgaria; wb.Countries.Hungary; wb.Countries.Serbia; wb.Countries.Ukraine; wb.Countries.Greece; wb.Countries.Romania |]
+let countries = [| wb.Countries.Austria; wb.Countries.Bulgaria; wb.Countries.Hungary; wb.Countries.Serbia; wb.Countries.Ukraine; wb.Countries.Greece; wb.Countries.Romania |]
 
 let draw (indicatorForEachCountry: Runtime.WorldBank.Indicator list, title, yAxisTitle) = 
     indicatorForEachCountry 
